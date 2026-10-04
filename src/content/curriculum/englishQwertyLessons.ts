@@ -1,0 +1,96 @@
+import { CurriculumModule } from '../../types/curriculum';
+
+export const ENGLISH_QWERTY_MODULES: CurriculumModule[] = [
+  {
+    id: 1,
+    title: 'Module 1: Home Row Fundamentals',
+    titleEn: 'Module 1: Home Row Fundamentals',
+    description: 'Learn the primary foundation: A S D F and J K L ;',
+    descriptionEn: 'Learn the primary foundation: A S D F and J K L ;',
+    level: 'beginner',
+    lessons: [
+      {
+        id: 'en-q-m1-l1',
+        layout: 'en-qwerty',
+        module: 1,
+        lessonNumber: 1,
+        title: 'Keys F and J (Anchor Keys)',
+        titleEn: 'Keys F and J (Anchor Keys)',
+        description: 'Rest index fingers on tactile home row markers.',
+        descriptionEn: 'Rest index fingers on tactile home row markers.',
+        objectives: ['Anchor tactile feel', 'Typing without looking down'],
+        estimatedMinutes: 2,
+        prerequisiteIds: [],
+        steps: [
+          {
+            type: 'instruction',
+            content: 'Feel the small bump on F with your left index finger, and on J with your right index finger.',
+            keyFocus: ['f', 'j'],
+            fingerFocus: ['left-index', 'right-index'],
+          },
+          {
+            type: 'exercise',
+            content: 'Practice smooth rhythm with F and J.',
+            exerciseText: 'f j f j ff jj fff jjj fjf jfj ffjj jjff',
+            targetWpm: 15,
+            targetAccuracy: 92,
+          },
+        ],
+      },
+      {
+        id: 'en-q-m1-l2',
+        layout: 'en-qwerty',
+        module: 1,
+        lessonNumber: 2,
+        title: 'Full Home Row: ASDF JKL;',
+        titleEn: 'Full Home Row: ASDF JKL;',
+        description: 'All eight fingers active on home row keys.',
+        descriptionEn: 'All eight fingers active on home row keys.',
+        objectives: ['Home row finger coordination', 'Clean spacebar thumb use'],
+        estimatedMinutes: 3,
+        prerequisiteIds: ['en-q-m1-l1'],
+        steps: [
+          {
+            type: 'exercise',
+            content: 'Combine both hands on home row words.',
+            exerciseText: 'all ask dad fall flask salad salsa glad lad shall',
+            targetWpm: 20,
+            targetAccuracy: 90,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: 'Module 2: Top Row & Common Sentences',
+    titleEn: 'Module 2: Top Row & Common Sentences',
+    description: 'Expand upward to E, R, T, Y, U, I, O, P and fluent phrases.',
+    descriptionEn: 'Expand upward to E, R, T, Y, U, I, O, P and fluent phrases.',
+    level: 'intermediate',
+    lessons: [
+      {
+        id: 'en-q-m2-l1',
+        layout: 'en-qwerty',
+        module: 2,
+        lessonNumber: 1,
+        title: 'Fluent English Phrases',
+        titleEn: 'Fluent English Phrases',
+        description: 'High frequency words and smooth cadence.',
+        descriptionEn: 'High frequency words and smooth cadence.',
+        objectives: ['35+ WPM pace', '95%+ accuracy'],
+        estimatedMinutes: 4,
+        prerequisiteIds: ['en-q-m1-l2'],
+        steps: [
+          {
+            type: 'exercise',
+            content: 'Type natural sentences smoothly.',
+            exerciseText: 'the quick brown fox jumps over the lazy dog and enjoys the bright sunshine in the afternoon.',
+            targetWpm: 35,
+            targetAccuracy: 94,
+          },
+        ],
+      },
+    ],
+  },
+];

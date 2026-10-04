@@ -1,0 +1,96 @@
+import { CurriculumModule } from '../../types/curriculum';
+
+export const TURKISH_F_MODULES: CurriculumModule[] = [
+  {
+    id: 1,
+    title: 'Modül 1: F Klavye Temel Sırası (UİEA - TKM)',
+    titleEn: 'Module 1: F Keyboard Home Row',
+    description: '1955 İhsan Sıtkı Yener milli F klavye düzeninde sesli harfler sol elde, sessizler sağ eldedir.',
+    descriptionEn: 'National Turkish F standard: vowels under left hand, key consonants under right.',
+    level: 'beginner',
+    lessons: [
+      {
+        id: 'tr-f-m1-l1',
+        layout: 'tr-f',
+        module: 1,
+        lessonNumber: 1,
+        title: 'F Klavyede A ve K Çıpaları',
+        titleEn: 'A and K Anchors on F Keyboard',
+        description: 'F klavyede işaret parmakları sol elde A, sağ elde K tuşları üzerindedir.',
+        descriptionEn: 'On Turkish F, left index rests on A and right index rests on K.',
+        objectives: ['A ve K kabartılarını hissetmek', 'F klavye temel duruşu'],
+        estimatedMinutes: 2,
+        prerequisiteIds: [],
+        steps: [
+          {
+            type: 'instruction',
+            content: 'F klavyede işaret parmaklarınız A ve K tuşlarına oturur (Q klavyeden farklıdır!).',
+            keyFocus: ['a', 'k'],
+            fingerFocus: ['left-index', 'right-index'],
+          },
+          {
+            type: 'exercise',
+            content: 'A ve K tuşları ile temel vuruşlar.',
+            exerciseText: 'a k a k ak ka aka kak akk kaa akaka kakakk',
+            targetWpm: 15,
+            targetAccuracy: 92,
+          },
+        ],
+      },
+      {
+        id: 'tr-f-m1-l2',
+        layout: 'tr-f',
+        module: 1,
+        lessonNumber: 2,
+        title: 'Sol El Seslileri: U - İ - E - A',
+        titleEn: 'Left Hand Vowels: U - İ - E - A',
+        description: 'Sol el parmaklarınızla Türkçenin en çok kullanılan sesli harflerini öğrenin.',
+        descriptionEn: 'Learn the primary Turkish vowels situated under the left hand.',
+        objectives: ['Sol el sesli harf akışı', 'E ve A refleksleri'],
+        estimatedMinutes: 3,
+        prerequisiteIds: ['tr-f-m1-l1'],
+        steps: [
+          {
+            type: 'exercise',
+            content: 'Sol el ev sırası vuruşları.',
+            exerciseText: 'uiea aieu eaiu uiea ieau eaui auie eiau uiea',
+            targetWpm: 18,
+            targetAccuracy: 90,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: 'Modül 2: F Klavye Hızlı Kelimeler',
+    titleEn: 'Module 2: Fast F Keyboard Words',
+    description: 'İki elin mükemmel dengesi (%49 sol - %51 sağ) ile yüksek hızda Türkçe kelime yazımı.',
+    descriptionEn: 'Achieve championship typing speed with optimal letter balance.',
+    level: 'intermediate',
+    lessons: [
+      {
+        id: 'tr-f-m2-l1',
+        layout: 'tr-f',
+        module: 2,
+        lessonNumber: 1,
+        title: 'Ev Sırası Kelimeleri',
+        titleEn: 'Home Row Word Flow',
+        description: 'Sadece ana sıradaki harflerle yüzlerce Türkçe kelime yazılabilir.',
+        descriptionEn: 'Hundreds of real Turkish words can be typed without leaving the home row.',
+        objectives: ['F klavyede el dengesi', '30+ WPM hız'],
+        estimatedMinutes: 4,
+        prerequisiteIds: ['tr-f-m1-l2'],
+        steps: [
+          {
+            type: 'exercise',
+            content: 'F klavye ana sıra kelimeleri.',
+            exerciseText: 'kat tam kaya kale ekmek kilit takım kalem kule mektup',
+            targetWpm: 28,
+            targetAccuracy: 93,
+          },
+        ],
+      },
+    ],
+  },
+];

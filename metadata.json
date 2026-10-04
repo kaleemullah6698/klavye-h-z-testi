@@ -1,0 +1,6 @@
+{
+  "name": "Klavye Hız Testi — Türkçe & İngilizce On Parmak Yazma Testi",
+  "description": "Türkçe Q, Türkçe F ve İngilizce QWERTY klavye hız testi. Canlı WPM, doğruluk, tutarlılık ölçümü, sanal 3D klavye kılavuzu ve kişisel rekor takibi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
